@@ -4,11 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:demo": "env-cmd -f .env.demo next dev",
     "build": "next build",
+     "build:demo": "env-cmd -f .env.demo next build",
+     "build:development": "env-cmd -f .env.development next build",
     "start": "next start",
+    "start:demo": "env-cmd -f .env.demo next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "env-cmd": "^11.0.0",
     "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0"
@@ -19,7 +24,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.4.2",
+    "eslint-config-next": "^14.2.35",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
